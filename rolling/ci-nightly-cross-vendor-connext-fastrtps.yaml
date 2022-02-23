@@ -2,7 +2,7 @@
 # ROS buildfarm ci-build file
 ---
 build_environment_variables:
-  NDDSHOME: '/opt/rti.com/rti_connext_dds-5.3.1'
+  CONNEXTDDS_DIR: '/opt/rti.com/rti_connext_dds-6.0.1'
   RMW_IMPLEMENTATIONS: 'rmw_connextdds:rmw_fastrtps_cpp'
   ROS_PYTHON_VERSION: '3'
   RTI_NC_LICENSE_ACCEPTED: 'yes'
@@ -55,7 +55,7 @@ repositories:
   - http://repo.ros2.org/ubuntu/testing
 targets:
   ubuntu:
-    focal:
+    jammy:
       amd64:
 type: ci-build
 underlay_from_ci_jobs:
