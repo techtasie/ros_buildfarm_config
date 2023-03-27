@@ -47,6 +47,7 @@ package_blacklist:
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
+- rsl  # Requires CMake 3.22
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
@@ -87,6 +88,7 @@ package_ignore_list:
 - rosidl_typesupport_connext_cpp  # No RPM package for Connext
 - rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
 - rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rqt_plot  # python3-matplotlib has no RPM for RHEL 9
 - rti_connext_dds_cmake_module  # No RPM package for Connext
 sync:
   package_count: 400
