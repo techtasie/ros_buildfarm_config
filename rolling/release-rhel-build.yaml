@@ -23,7 +23,6 @@ package_blacklist:
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
-- kobuki_core  # Build failures on RHEL due to -Werror
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # libfyaml has no RPM package for RHEL
@@ -33,8 +32,7 @@ package_blacklist:
 - ompl  # opende has no RPM package for RHEL
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
-- performance_test  # Missing dependency on git: https://gitlab.com/ApexAI/performance_test/-/merge_requests/371
-- proxsuite  # simde and matio have no RPM packages for RHEL 9
+- proxsuite  # simde has no RPM package for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
@@ -51,7 +49,6 @@ package_blacklist:
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros_industrial_cmake_boilerplate  # iwyu has no RPM packages for RHEL 9
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
-- rsl  # Requires CMake 3.22
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 9
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 9
 - sol_vendor  # Targets 'HEAD' in vendor package
