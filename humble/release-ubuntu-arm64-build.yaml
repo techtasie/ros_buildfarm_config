@@ -54,8 +54,8 @@ repositories:
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/building
-target_repository: http://repo.ros2.org/ubuntu/building
+  - http://lab-jen
+target_repository: http://lab-jen
 targets:
   ubuntu:
     jammy:
